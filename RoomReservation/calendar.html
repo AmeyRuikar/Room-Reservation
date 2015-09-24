@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    
+
+<link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='fullcalendar/lib/moment.min.js'></script>
+<script src='fullcalendar/lib/jquery.min.js'></script>
+<script src='fullcalendar/fullcalendar.min.js'></script>
+    
+     <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+    <title>calendar View</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    
+    
+    
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+    
+    
+    <script>
+
+	$(document).ready(function() {
+	
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2015-08-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			
+		});
+		
+	});
+
+</script>
+    
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="#">Room Reservation - Calendar View</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+<div class="col-lg-12"> 
+		<nav>
+		<hr>
+		<br>
+          <ul class="nav nav-inverse nav-justified">
+            <li ><a href="template.html">List View</a></li>
+            <li class="active"><a href="#">Calendar view</a></li>
+    
+          </ul>
+        </nav>
+        <hr>
+        </div>
+   
+
+ 
+        
+	<div id="calendar"></div>
+	
+	
+  
+      <hr>
+
+      <footer>
+        <p>&copy; Raptor 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+    <script src="js/bootstrap.min.js"></script>
+       
+  </body>
+</html>

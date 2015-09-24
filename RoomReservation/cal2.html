@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calendar</title>
+<link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='fullcalendar/lib/moment.min.js'></script>
+<script src='fullcalendar/lib/jquery.min.js'></script>
+<script src='fullcalendar/fullcalendar.min.js'></script>
+
+<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2015-02-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="calendar"></div>
+
+</body>
+
+<html>
